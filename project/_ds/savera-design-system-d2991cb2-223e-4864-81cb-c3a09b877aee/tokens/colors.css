@@ -1,0 +1,97 @@
+/* ============================================================
+   SAVERA — Color tokens
+   Palette mirrors the African bush at golden hour:
+   deep forest greens, warm ambers, sage, and warm creams.
+   ============================================================ */
+:root {
+  /* ---- Forest greens (primary dark surfaces) — muted, olive-leaning ---- */
+  --forest-950: #1B241F;
+  --forest-900: #26302A;
+  --forest-800: #36433A; /* canonical dark brand surface */
+  --forest-700: #45524A;
+  --forest-600: #54625A;
+
+  /* ---- Teal (icon containers, deep accents) ---- */
+  --teal-900: #16302E;
+  --teal-800: #1F3B38;
+  --teal-700: #2A4D49;
+
+  /* ---- Amber / gold (primary action, golden hour) ---- */
+  --gold-600: #B5872F;
+  --gold-500: #C99A3F; /* primary CTA */
+  --gold-400: #D9B566;
+  --gold-300: #E7CE97;
+  --gold-100: #F6ECD4;
+
+  /* ---- Sage (secondary action, links, muted text) ---- */
+  --sage-700: #6B7A5C;
+  --sage-600: #7E8E6C;
+  --sage-500: #8E9C7D; /* secondary CTA */
+  --sage-400: #A7B395;
+  --sage-300: #C2CBB4; /* muted sage-gray subtext on dark */
+  --sage-200: #DBE0D1;
+
+  /* ---- Warm neutrals ---- */
+  --cream-50: #FBF9F4; /* ivory page bg */
+  --cream-100: #F5F1E8; /* warm section bg */
+  --cream-200: #EAE3D4;
+  --sand-300: #D8CDB8;
+  --stone-500: #8A8475;
+  --stone-700: #57534A;
+  --ink-900: #23211C; /* near-black warm text on light */
+
+  --white: #FFFFFF;
+  --black: #000000;
+
+  /* ============================================================
+     Semantic aliases — reference these in components
+     ============================================================ */
+  /* Surfaces */
+  --surface-page: var(--cream-50);
+  --surface-warm: var(--cream-100);
+  --surface-card: var(--white);
+  --surface-dark: var(--forest-800);
+  --surface-darker: var(--forest-900);
+  --surface-icon: var(--teal-800);
+
+  /* Text on light */
+  --text-strong: var(--ink-900);
+  --text-body: var(--stone-700);
+  --text-muted: var(--stone-500);
+  /* Text on dark */
+  --text-on-dark: var(--white);
+  --text-on-dark-muted: var(--sage-300);
+
+  /* Brand actions */
+  --action-primary: var(--gold-500);
+  --action-primary-hover: var(--gold-600);
+  --action-primary-text: var(--forest-900);
+  --action-secondary: var(--sage-500);
+  --action-secondary-hover: var(--sage-600);
+  --action-secondary-text: var(--white);
+
+  /* Accents */
+  --accent-gold: var(--gold-500);
+  --accent-sage: var(--sage-500);
+  --link-on-dark: var(--sage-400);
+  --star: var(--gold-400);
+
+  /* Lines & borders */
+  --border-light: #E4DECF;
+  --border-on-dark: rgba(255, 255, 255, 0.16);
+  --divider-on-dark: rgba(194, 203, 180, 0.28);
+
+  /* Status (kept warm/earthy to stay on-brand) */
+  --success: #5B7A52;
+  --warning: var(--gold-600);
+  --danger: #B4543B;
+  --info: var(--teal-700);
+
+  /* Image-overlay gradient (text legibility on photos) */
+  --overlay-photo: linear-gradient(180deg, rgba(22, 32, 29, 0) 38%, rgba(22, 32, 29, 0.78) 100%); /* @kind other */
+  --overlay-photo-strong: linear-gradient(180deg, rgba(22, 32, 29, 0) 28%, rgba(22, 32, 29, 0.86) 100%); /* @kind other */
+
+  /* Golden-hour gradient used for photo placeholders / atmospheric fills */
+  --golden-hour: linear-gradient(150deg, #3a2f1d 0%, #6e5326 32%, #c99a3f 62%, #e7c074 100%); /* @kind other */
+  --bush-dusk: linear-gradient(160deg, #16302e 0%, #2b3834 45%, #5b5a2f 100%); /* @kind other */
+}

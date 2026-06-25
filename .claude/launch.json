@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "asili-trails",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3456", "project"],
+      "port": 3456
+    }
+  ]
+}

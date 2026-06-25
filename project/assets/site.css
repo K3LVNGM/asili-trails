@@ -1,0 +1,34 @@
+/* Asili / Savera site — base + responsive helpers */
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--surface-page); font-family: var(--font-sans); color: var(--text-strong); -webkit-font-smoothing: antialiased; }
+a { text-decoration: none; color: inherit; }
+img { display: block; }
+button { font-family: inherit; }
+::selection { background: var(--gold-300); }
+:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+/* Responsive grids */
+.at-grid { display: grid; gap: 28px; }
+.at-grid.tight { gap: 8px; }
+.at-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.at-grid-3 { grid-template-columns: repeat(3, 1fr); }
+.at-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 1180px) {
+  .at-grid-4 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 980px) {
+  .at-nav { display: none !important; }
+  .at-burger { display: inline-flex !important; }
+  .at-grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .at-foot-grid { grid-template-columns: 1fr 1fr !important; }
+  .at-actions .at-enquire { display: none; }
+  .at-split { grid-template-columns: 1fr !important; }
+  .at-aside { position: static !important; }
+}
+@media (max-width: 640px) {
+  .at-grid-2, .at-grid-3, .at-grid-4 { grid-template-columns: 1fr; }
+  .at-foot-grid { grid-template-columns: 1fr !important; }
+  section { padding-left: 22px !important; padding-right: 22px !important; }
+}

@@ -1,0 +1,58 @@
+/* ============================================================
+   SAVERA — Typography tokens
+   Lato everywhere. Section headings are UPPERCASE, LIGHT-WEIGHT and
+   widely letter-spaced (editorial luxury restraint — never black/bold).
+   Card & UI titles stay bold for hierarchy. Dancing Script (sub for
+   ErnestAndEmily) is the cursive accent that sits ABOVE section headings.
+   ============================================================ */
+:root {
+  /* Families */
+  --font-sans: "Lato", "Helvetica Neue", Arial, sans-serif;
+  --font-script: "Dancing Script", "Brush Script MT", cursive; /* SUB for ErnestAndEmily */
+
+  /* Weights */
+  --fw-light: 300; /* @kind font */
+  --fw-regular: 400; /* @kind font */
+  --fw-bold: 700; /* @kind font */
+  --fw-black: 900; /* @kind font */
+
+  /* Type scale (rem @ 16px base) */
+  --fs-2xs: 0.6875rem; /* 11px - micro labels */
+  --fs-xs: 0.75rem;    /* 12px */
+  --fs-sm: 0.875rem;   /* 14px */
+  --fs-base: 1rem;     /* 16px - body */
+  --fs-md: 1.125rem;   /* 18px */
+  --fs-lg: 1.375rem;   /* 22px */
+  --fs-xl: 1.75rem;    /* 28px */
+  --fs-2xl: 2.25rem;   /* 36px */
+  --fs-3xl: 3rem;      /* 48px */
+  --fs-4xl: 4rem;      /* 64px - hero */
+  --fs-5xl: 5.25rem;   /* 84px - oversized hero */
+
+  /* Line heights */
+  --lh-tight: 1.05; /* @kind font */
+  --lh-snug: 1.2; /* @kind font */
+  --lh-normal: 1.5; /* @kind font */
+  --lh-relaxed: 1.7; /* @kind font */
+
+  /* Letter spacing — the brand leans on wide tracking for caps */
+  --ls-tight: -0.01em; /* @kind font */
+  --ls-normal: 0; /* @kind font */
+  --ls-snug: 0.04em;   /* @kind font */
+  --ls-wide: 0.08em;   /* @kind font */
+  --ls-heading: 0.14em; /* @kind font */
+  --ls-wider: 0.18em;  /* @kind font */
+  --ls-widest: 0.28em; /* @kind font */
+
+  /* Semantic roles
+     Section headings: LIGHT weight + wide tracking + uppercase. This is the
+     defining editorial look — refined, not shouty. Card/UI titles use bold. */
+  --eyebrow: var(--fw-bold) var(--fs-xs) / var(--lh-normal) var(--font-sans); /* @kind font */
+  --script-accent: var(--fw-regular) var(--fs-lg) / 1 var(--font-script); /* @kind font */
+  --heading-display: var(--fw-light) var(--fs-4xl) / var(--lh-tight) var(--font-sans); /* @kind font */
+  --heading-1: var(--fw-light) var(--fs-3xl) / 1.1 var(--font-sans); /* @kind font */
+  --heading-2: var(--fw-light) var(--fs-2xl) / 1.18 var(--font-sans); /* @kind font */
+  --heading-3: var(--fw-bold) var(--fs-lg) / var(--lh-snug) var(--font-sans); /* @kind font */
+  --body: var(--fw-regular) var(--fs-base) / var(--lh-relaxed) var(--font-sans); /* @kind font */
+  --body-sm: var(--fw-regular) var(--fs-sm) / var(--lh-normal) var(--font-sans); /* @kind font */
+}
